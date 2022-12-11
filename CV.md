@@ -13,3 +13,20 @@ increase the ADC precision by 2 bits
 
 - Conducted testing and characterization for a number of integrated circuits, which were designed in the Lab. Testing employed FPGA, PC, oscilloscopes and other equipment
 
+> *2018.07 – 2018.08*
+**Prosoft-Systems Intern, Yekaterinburg**
+
+- Designed capacitive keyboard in Altium Designer
+
+***
+### Education
+
+- *2018.09 – 2020.07*
+**National Research Nuclear University MEPhI**
+MSc with Honours, Micro- and Nano- electronics
+Moscow
+
+- *2014.09 - 2018.07*
+**Ural Federal University**
+BSc with Honours, Electronics and Automatics of Physical Installations
+Yekaterinburg
