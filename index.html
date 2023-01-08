@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/resources/logo.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Plants</title>
@@ -17,27 +18,27 @@
             <div class="logo-data"><img src="resources/logo_vector.png" alt="plants"> Plants</div>
             
             <!-- Burger button -->
-            <input id="menu-toggle" type="checkbox">
-            <label class="menu-button-container" for="menu-toggle">
-                <div class="menu-button"></div>
-            </label>
+            <!-- <input id="menu-toggle" type="checkbox">
+            <label class="menu-button-container" for="menu-toggle"></label>
+            <div class="menu-button"></div> -->
             
             <nav class="menu">
-                <div class="nav-button emph">Home</div>
-                <div class="nav-button">About us</div>
-                <div class="nav-button">Service</div>
-                <div class="nav-button">Price</div>
-                <div class="nav-button">Contacts</div>
+                <ul>
+                    <li><a class="nav-button emph" href="#">Home</a></li>
+                    <li><a class="nav-button" href="#">About us</a></li>
+                    <li><a class="nav-button" href="#">Service</a></li>
+                    <li><a class="nav-button" href="#">Price</a></li>
+                    <li><a class="nav-button" href="#">Contacts</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-
-    <body>
+    <main>
         <section class="section-welcome">
             <img src="resources/leafs.png" alt="Leafs" class="img-leafs">
             <div class="column-welcome">
-                <div class="text-welcome-head">We grow <span class="emph">plants</span> and give you
-                    oxygen</div>
+                <h1 class="text-welcome-head">We grow <span class="emph">plants</span> and give you
+                    oxygen</h1>
                 <div class="text-welcome-content">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s.
@@ -48,7 +49,7 @@
 
         <section class="section-about">
             <div class="column-about">
-                <div class="text-about-head">We are <span class="emph">professional experienced</span> gardeners</div>
+                <h2 class="text-about-head">We are <span class="emph">professional experienced</span> gardeners</h2>
                 <div class="text-about-content">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
@@ -56,18 +57,17 @@
                     leap into electronic typesetting, remaining essentially unchanged.
                 </div>
             </div>
-            <img src="resources/houseplant 1.png" alt="Houseplant" class="img-houseplant">
+            <img src="resources/houseplant.png" alt="Houseplant" class="img-houseplant">
         </section>
-        
         
         <section class="section-services">
             <div class="section-head">
-                <div class="services-head-text">Service and our projects</div>
-                <nav class="services-head-nav">
+                <h2 class="services-head-text">Service and our projects</h2>
+                <div class="services-head-nav">
                     <button>Gardens</button>
                     <button>Lawn</button>
                     <button>Planting</button>
-                </nav>
+                </div>
             </div>
             
             <div class="services-content">
@@ -120,7 +120,7 @@
 
         <section class="section-prices">            
             <div class="column-prices">
-                <div class="moto">Prices</div>
+                <h2 class="moto">Prices</h2>
                 <div class="column-price-packets">
                     <button>Basics</button>
                     <button>Standard</button>
@@ -140,29 +140,32 @@
                 Contact us
             </div>
             <div class="section-body">
-                <img src="resources/contact_woman 1.png" alt="contact_woman">
-                <div class="city-input">
-                    <button>City</button>
+                <img src="resources/contact_woman.png" alt="contact_woman">
+                
+                <div>
+                    <button class="accordion city-input">City</button>
+                    <div class="city-panel">
+                        <input value="Input City">Lorem ipsum...</p>
+                    </div>
                 </div>
             </div>
         </section>
+    </main>
 
-
-        <footer class="footer">
-            <div class="github">
-                <div>&#169;</div>
-                <div>2022</div>
-                <div>github</div>
-            </div>
-            <div class="rsschool">Rolling Scopes School</div>
-            <div class="social-links">
-                <img src="resources/social-media/inst.png" alt="intagram">
-                <img src="resources/social-media/fb.png" alt="facebook">
-                <img src="resources/social-media/tw.png" alt="twitter">
-                <img src="resources/social-media/pinterest.png" alt="pinterest">
-            </div>
-        </footer>
-    </body>
+    <footer class="footer">
+        <a class="github" href="https://github.com/arthur-sr">
+            <div>&#169;</div>
+            <div>2022</div>
+            <div>github</div>
+        </a>
+        <a class="rsschool" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+        <ul class="social-links">
+            <li><a href="#"><img src="resources/social-media/inst.png" alt="intagram"></a></li>
+            <li><a href="#"><img src="resources/social-media/fb.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="resources/social-media/tw.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="resources/social-media/pinterest.png" alt="pinterest"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
