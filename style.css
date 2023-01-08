@@ -1,0 +1,48 @@
+body {
+    background-color:rgb(174, 76, 86);
+}
+
+.cv_container {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color:rgb(241, 244, 242);
+
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    
+    padding-left: 3%;
+    padding-right: 3%;
+
+    border-radius: 30px;
+}
+
+.experience_table {
+    color: rgb(57, 51, 51);
+    border: solid;
+}
+
+.position {
+    color: rgb(101, 14, 23);
+}
+
+div.contact_line{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border: solid red 1pt;
+    font-size: 15pt;
+}
+
+div.contact_line span {
+    display: table-cell;
+    text-align: center;
+}
+
+#name {
+    font-size: 25pt;
+}
+
+.my_image {
+    width: 150pt; 
+    height: auto;
+}
