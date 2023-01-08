@@ -4,140 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>CV</title>
+    <link rel="icon" href="/resources/logo.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Plants</title>
 </head>
-<body>
-    <div class="container cv_container">
-        <h1>CV</h1>
+
+<body class="body">
+    <!-- This ".header" could be put in .section-head. But it remains outside to make it dockable at top -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-data"><img src="resources/logo_vector.png" alt="plants"> Plants</div>
+            
+            <!-- Burger button -->
+            <!-- <input id="menu-toggle" type="checkbox">
+            <label class="menu-button-container" for="menu-toggle"></label>
+            <div class="menu-button"></div> -->
+            
+            <nav class="menu">
+                <ul>
+                    <li><a class="nav-button emph" href="#">Home</a></li>
+                    <li><a class="nav-button" href="#">About us</a></li>
+                    <li><a class="nav-button" href="#">Service</a></li>
+                    <li><a class="nav-button" href="#">Price</a></li>
+                    <li><a class="nav-button" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-welcome">
+            <img src="resources/leafs.png" alt="Leafs" class="img-leafs">
+            <div class="column-welcome">
+                <h1 class="text-welcome-head">We grow <span class="emph">plants</span> and give you
+                    oxygen</h1>
+                <div class="text-welcome-content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
+                </div>
+                <button class="btn-learn-more">LEARN MORE</button>
+            </div>
+        </section>
+
+        <section class="section-about">
+            <div class="column-about">
+                <h2 class="text-about-head">We are <span class="emph">professional experienced</span> gardeners</h2>
+                <div class="text-about-content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+            </div>
+            <img src="resources/houseplant.png" alt="Houseplant" class="img-houseplant">
+        </section>
         
-        <div>
-            <span id="name">Arthur Serazetdinov</span>
-            <img src="img/my_photo.jpg" alt="my_photo" class="my_image">
-        </div>
-        <hr>
-
-        <div class="contact_line">
-            <span>Phone: NA</span>
-            <span>arthurserazetdinov@gmail.com</span>
-            <span>
-                Position:
-                Software developer
-            </span>
-        </div>
-        <hr>
-
+        <section class="section-services">
+            <div class="section-head">
+                <h2 class="services-head-text">Service and our projects</h2>
+                <div class="services-head-nav">
+                    <button>Gardens</button>
+                    <button>Lawn</button>
+                    <button>Planting</button>
+                </div>
+            </div>
             
-        <!-- Professional experience -->
-        <h3>Professional experience</h3>
-        <table class="table experience_table">
-            <tbody>
-                <tr class="table-primary">
-                    <td class="dates">
-                        2018.10 – 2022.11.01
-                    </td>
-                    <td class="position">
-                        ASICLab
-                    </td>
-                    <td class="location">
-                        Moscow
-                    </td>
-                </tr>
-            
-                <tr class="job_desciption">
-                    <td colspan="3">
-                        <ul>
-                                Designed two projects for FPGA on C (freeRTOS) and Verilog (FPGA fabric) for high-speed parallel
-                                IC-data readout
-                                Conducted ADC characterization in Matlab and designed IIR-filter with noise-shaping, which allowed to
-                                increase the ADC precision by 2 bits
-                                Conducted testing and characterization for a number of integrated circuits, which were designed in the
-                                Lab. Testing employed FPGA, PC, oscilloscopes and other equipment
-                            
-                                Designed at least 10 analog integrated circuit blocks according to required technical specifications
-                                (operational amplifiers, comparators, LVDS, ADC, SLVS, CML). Designed a full amplification channel
-                                for one of the projects of the laboratory
-                    </td>
-                </tr>
+            <div class="services-content">
+                <div class="services-content-plate">
+                    <img src="resources/services_1.png" alt="Garden care">
+                    <div class="service-description">
+                        <div class="service-name">Garden care</div>
+                        <div class="service-text">Lorem Ipsum has been the industry</div>
+                    </div>
+                </div>
+                <div class="services-content-plate">
+                    <img src="resources/services_2.png" alt="Planting">
+                    <div class="service-description">
+                        <div class="service-name">Planting</div>
+                        <div class="service-text">Lorem Ipsum has been the industry</div>
+                    </div>
+                </div>
+                <div class="services-content-plate">
+                    <img src="resources/services_3.png" alt="Lawn care">
+                    <div class="service-description">
+                        <div class="service-name">Lawn care</div>
+                        <div class="service-text">Lorem Ipsum has been the industry</div>
+                    </div>
+                </div>
+                <div class="services-content-plate">
+                    <img src="resources/services_4.png" alt="Planting">
+                    <div class="service-description">
+                        <div class="service-name">Planting</div>
+                        <div class="service-text">Lorem Ipsum has been the industry</div>
+                    </div>
+                </div>
+                <div class="services-content-plate">
+                    <img src="resources/services_5.png" alt="Garden care">
+                    <div class="service-description">
+                        <div class="service-name">Garden care</div>
+                        <div class="service-text">Lorem Ipsum has been the industry</div>
+                    </div>
+                </div>
+                <div class="services-content-plate">
+                    <img src="resources/services_6.png" alt="Planting">
+                    <div class="service-description">
+                        <div class="service-name">Planting</div>
+                        <div class="service-text">Lorem Ipsum has been the industry</div>
+                    </div>
+                </div>
+            </div>
 
-                <tr class="table-primary">
-                    <td class="dates">
-                        2018.07 – 2018.08
-                    </td>
-                    <td class="position">
-                        Prosoft-Systems (Biometrics)
-                        <div>
-                            Schematics and Printed Circuit Board Design Intern
-                        </div>
-                    </td>
-                    <td class="location">
-                        Yekaterinburg
-                    </td>
-                </tr>
 
-                <tr class="job_desciption">
-                    <td colspan="3">
-                        Designed capacitive keyboard in Altium Designer
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        </section>
 
-        <!-- Education -->
-        <h3>Education</h3>
-        <table class="table experience_table">
-            <tbody>
-                <tr>
-                    <td class="dates">
-                        2018.09 – 2020.07
-                    </td>
-                    <td class="position">
-                        National Research Nuclear University MEPhI
-                        <div>
-                            MSc with Honours, Micro- and Nano- electronics
-                        </div>
-                    </td>
-                    <td class="location">
-                        Moscow
-                    </td>
-                </tr>
-                <tr>
-                    <td class="dates">
-                        2016.09 – 2019.02
-                    </td>
-                    <td class="position">
-                        Ural Federal University
-                        <div>
-                            Higher Degree Diploma, Technical and Business Interpreter (English)
-                            Second higher education diploma
-                        </div>
-                    </td>
-                    <td class="location">
-                        Yekaterinburg
-                    </td>
-                </tr>
-                <tr>
-                    <td class="dates">
-                        2014.09 - 2018.07
-                    </td>
-                    <td class="position">
-                        Ural Federal University
-                        <div>
-                            BSc with Honours, Electronics and Automatics of Physical Installations
-                        </div>
-                    </td>
-                    <td class="location">
-                        Yekaterinburg
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="section-prices">            
+            <div class="column-prices">
+                <h2 class="moto">Prices</h2>
+                <div class="column-price-packets">
+                    <button>Basics</button>
+                    <button>Standard</button>
+                    <button>Pro care</button>
+                </div>
+            </div>
 
-        <h3>Extras</h3>
-        <table class="table experience_table">
+            <div class="column-prices-addup">
+                <div class="moto">Our best <span class="emph">gardeners</span> are ready to help you</div>
+                <button>Contact us</button>
+                <img src="resources/leafs_2.png" alt="leafs" class="img-leafs-2">
+            </div>
+        </section>
 
-        </table>
-    </div>
+        <section class="section-contacts">
+            <div class="section-head">
+                Contact us
+            </div>
+            <div class="section-body">
+                <img src="resources/contact_woman.png" alt="contact_woman">
+                
+                <div>
+                    <button class="accordion city-input">City</button>
+                    <div class="city-panel">
+                        <input value="Input City">Lorem ipsum...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="github" href="https://github.com/arthur-sr">
+            <div>&#169;</div>
+            <div>2022</div>
+            <div>github</div>
+        </a>
+        <a class="rsschool" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+        <ul class="social-links">
+            <li><a href="#"><img src="resources/social-media/inst.png" alt="intagram"></a></li>
+            <li><a href="#"><img src="resources/social-media/fb.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="resources/social-media/tw.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="resources/social-media/pinterest.png" alt="pinterest"></a></li>
+        </ul>
+    </footer>
 </body>
+<script src="js/index.js"></script>
 </html>
